@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  background: whitesmoke;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+main {
+  max-width: 760px;
+  margin: auto;
+  padding: 20px;
+}
+h1, h2 { color: maroon; }
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+label { display: block; font-weight: bold; }
+input, select, button { font: inherit; padding: 10px; }
+input, select {
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid gray;
+  background: white;
+  color: black;
+}
+.fields { display: flex; gap: 20px; }
+.field { flex: 1; min-width: 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+button {
+  background: maroon;
+  color: white;
+  border: 2px solid maroon;
+  cursor: pointer;
+}
+/* A visible outline shows which control receives keyboard input. */
+:focus-visible { outline: 3px solid navy; outline-offset: 3px; }
+.feedback { padding: 10px; border: 2px solid gray; }
+.error { color: darkred; background: mistyrose; }
+.success { color: darkgreen; background: honeydew; }
+#summary { font-weight: bold; }
+@media (max-width: 600px) {
+  .fields { flex-direction: column; }
+}
